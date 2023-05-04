@@ -1,0 +1,150 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0px 70px;
+            position: absolute;
+            background-color: #e27d60;
+            align-content: center   ;
+           
+
+        }
+            .navbar ul{
+            list-style: none;
+            padding:0;
+            margin: 0;
+            float: right;
+            
+        }
+        nav li{
+            display: inline-block;
+        }
+        nav li a{
+            font-size: 18px;
+            padding: 0px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav .title p{
+            font-family: 'Times New Roman', serif;
+            font-size: 35px;
+            font-weight: bold;
+            float: left;
+            color: white;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            margin-top: 0;
+            margin-left:0px;
+        }
+        body {
+            min-height: 125vh; 
+            background-image: linear-gradient(rgba(109, 104, 104, 0.6),rgba(131, 130, 130, 0.6)), url(download.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            
+        }
+        .main-text {
+            width: 25%;
+            text-align: center;
+            transform: translateY(25vh);
+           margin: auto;
+        }
+        .main-text h1 {
+            font-size: 40px;
+            color: #fff;
+            letter-spacing: 2.5px;
+            font-weight: 800;
+            margin-bottom: 15px;
+           
+        }
+        .main-text p {
+            font-size: 20px;
+            color: #fff4f4;
+            line-height: 1.5;
+            margin-bottom: 50px;
+            
+        }
+        .main-text .button {
+            color: #fff;
+            font-size: 25px;
+            padding: 12px 15px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: #85dcb8;
+           
+            
+        }
+
+        footer{
+            background: #e8a87c;
+            height: auto;
+            width: 100vw;
+            font-family: "Open Sans";
+            padding-top: 10px;
+            color: white;   
+            margin-top: 600px;
+
+
+        }
+        .footer-content{
+            
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3{
+            font-size: x-large;
+            font-weight: 100;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+        .footer-content h3 span{
+            color: #41b3a3;
+        }
+        .footer-content p{
+            max-width: 500px;
+            margin: 15px;
+            line-height: 20px;
+            font-size: large;
+        }   
+        .SOCMED{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem  3rem ;
+        }
+        .SOCMED li{
+            margin: 10px;
+            padding-top: 10px;
+            padding-right: 25px;
+        }
+        .SOCMED a{
+            text-decoration: none;
+            color: white;
+        }
+        .SOCMED a i{
+            font-size: 1.5rem;
+            transition: color .4s ease;
+        }
+        .SOCMED a:hover i{
+            color: #3d3428;
+        }
+        .footer-bottom{
+            text-align: center;
+            padding: 50px;
+            background-color: #41b3a3;
+        }
+        .footer-bottom span{
+            color: #f7f7f7;
+        }
