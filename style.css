@@ -58,12 +58,13 @@ body {
     min-height: 100vh; 
     background-image: url(invent.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 
     
 }
 .main-text {
-    color: black;
+    color: white;
     width: 25%;
     text-align: center;
     transform: translateY(25vh);
@@ -71,7 +72,7 @@ body {
 }
 .main-text h1 {
     font-size: 40px;
-    color: black;
+    color: white;
     letter-spacing: 2.5px;
     font-weight: 800;
     margin-bottom: 15px;
@@ -79,7 +80,7 @@ body {
 }
 .main-text p {
     font-size: 20px;
-    color: black;
+    color: white;
     line-height: 1.5;
     margin-bottom: 50px;
     
