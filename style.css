@@ -56,7 +56,6 @@ nav .title p{
 }
 body {
     min-height: 100vh; 
-    background-image: url(invent.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
