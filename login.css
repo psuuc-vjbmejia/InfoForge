@@ -82,17 +82,20 @@ background: linear-gradient(to bottom, #ceda28, #191b1d);
 .form a:hover{
   text-decoration: underline;
 }
-.form input.button{
-  color: #fff;
-  background: #009579;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin-top: 1.7rem;
+.form button {
+  background-color: #009579;
+  border-color: #009579;
+  border-width: 1in;
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
   cursor: pointer;
-  transition: 0.4s;
+  width: 100%;
+  font-size: 20px;
+  
 }
-.form input.button:hover{
+.form .button:hover{
   background: #006653;
 }
 .signup{
