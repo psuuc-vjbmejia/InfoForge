@@ -40,18 +40,6 @@
     border-radius: 7px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
   }
-  .container .registration{
-    display: none;
-  }
-  #check:checked ~ .registration{
-    display: block;
-  }
-  #check:checked ~ .login{
-    display: none;
-  }
-  #check{
-    display: none;
-  }
   .container .form{
     padding: 2rem;
   }
@@ -94,15 +82,4 @@
   }
   .form input.button:hover{
     background: #006653;
-  }
-  .signup{
-    font-size: 17px;
-    text-align: center;
-  }
-  .signup label{
-    color: #009579;
-    cursor: pointer;
-  }
-  .signup label:hover{
-    text-decoration: underline;
   }
