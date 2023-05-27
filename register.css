@@ -117,21 +117,20 @@ body{
   font-size: 1rem;
 }
 .form button {
-  height: 55px;
-  width: 100%;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 30px;
+  background-color: #009579;
+  border-color: #009579;
+  border-width: 1in;
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
-  background: #009579;
+  width: 100%;
+  font-size: 20px;
 }
 .form button:hover {
   background: #009579;
 }
-/*Responsive*/
 @media screen and (max-width: 500px) {
   .form .column {
     flex-wrap: wrap;
