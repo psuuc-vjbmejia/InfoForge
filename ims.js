@@ -19,8 +19,8 @@ displayData(data);
 const form = document.getElementById("form");
 form.addEventListener("submit", function(event) {
   event.preventDefault();
-  const name = document.getElementById("Name").value;
-  const price = document.getElementById("Price").value;
+  const name = document.getElementById("name").value;
+  const price = document.getElementById("price").value;
   addData(name, price);
   form.reset();
 });
