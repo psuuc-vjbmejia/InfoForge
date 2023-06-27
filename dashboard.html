@@ -1,55 +1,47 @@
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMS</title>
+  <link rel="stylesheet" href="dashboard.css">
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-     <title> Dashboard</title> 
-    <link rel="stylesheet" href="dashboard.css">
-   </head>
-<body>
-    
-  <nav>
-    <div class="nav-content">
-      <div class="logo">
-        <img src="lg.png">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="index.html" class="button">Sign Out</a></li>
-      </ul>
+</head>
+
+<nav>
+  <div class="nav-content">
+    <div class="logo">
+      <img src="lg.png" alt="Logo">
     </div>
-  </nav>
- 
-  <script>
-  let nav = document.querySelector("nav");
-    window.onscroll = function() {
-      if(document.documentElement.scrollTop > 20){
-        nav.classList.add("sticky");
-      }else {
-        nav.classList.remove("sticky");
-      }
-    }
-  </script>
-      <footer>
-        <div class="footer-content">
-          <h3>Info<span>Forge</span></h3>
-          <p>"Take inventory of what you have to offer. Place a value on it. Respect it - because if you don't respect what you have to offer it's hard for other people to."</p>
-          <ul class="SOCMED">
-            <li><a href="#" ><img src="fb.png" alt="Facebook"  width="25" height="25"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><img src="twit.png" alt="Twitter width="25" height="25"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><img src="insta.png" alt="Twitter width="25" height="25"><i class="fab fa-instagram"></i></a></li>
-            <img src="" alt="" sizes="" srcset="">
-          </ul>
-          
-        </div>
-        <div class="footer-bottom">
-          <p>Legal disclaimer: All content and Information on this website is for informational and educational purposes only and does not constitute educational/teaching advice.</p>
-          <p>&copy; 2023 InfoForge. All rights reserved. <span>Vee Jay Mejia</span></p>
-        </div>
-      </footer>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Home</a></li>
+      <li><a href="ims.html">IMS</a></li>
+      <li><a href="feature.html">Get</a></li>
+      <li><a href="#" class="logout-btn">Log Out</a></li>
+    </ul>
+  </div>
+</nav>
 
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Article</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra, ipsum sed iaculis sagittis, lorem
+        neque hendrerit dui.</p>
+    </div>
+  
+    <div class="card">
+      <h2>Information Management</h2>
+      <p>Track your Inventory.</p>
+    </div>
+  
+    <div class="card">
+      <h2>Reviews</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra, ipsum sed iaculis sagittis, lorem
+        neque hendrerit dui.</p>
+    </div>
+    </table>
+  </div>
 </body>
 </html>
