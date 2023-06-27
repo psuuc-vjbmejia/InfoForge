@@ -11,8 +11,6 @@ function validateRegistrationForm() {
     const regionInput = document.getElementById("regionInput");
     const postalCodeInput = document.getElementById("postalCodeInput");
 
-    emailInput.value = emailInput;
-    passwordInput.value = passwordInput;
   
   
     if (fullNameInput.value.trim() === "") {
