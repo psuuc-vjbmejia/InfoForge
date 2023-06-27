@@ -1,14 +1,14 @@
 let data = [
-  { id: 1, name: "Dowee Donut", price: "₱97" },
-  { id: 2, name: "Fudgee Bar", price: "₱79" },
-  { id: 3, name: "ALibaba", price: "₱29" },
-  { id: 4, name: "Bawang na bawang", price: "₱29" },
-  { id: 5, name: "Bida", price: "₱29" },
-  { id: 6, name: "Maxx", price: "₱59" },
-  { id: 7, name: "Snow Bear", price: "₱69" },
-  { id: 8, name: "Mentos", price: "₱59" },
-  { id: 9, name: "Pancit Canton", price: "₱99" },
-  { id: 10, name: "Lucky Me Noodles", price: "₱89" },
+  { id: 1, name: "Dowee Donut", price: "₱97", quan: "67"},
+  { id: 2, name: "Fudgee Bar", price: "₱79", quan: "1237"},
+  { id: 3, name: "ALibaba", price: "₱29" , quan: "51"},
+  { id: 4, name: "Bawang na bawang", price: "₱29" , quan: "532"},
+  { id: 5, name: "Bida", price: "₱29", quan: "234"},
+  { id: 6, name: "Maxx", price: "₱59" , quan: "324"},
+  { id: 7, name: "Snow Bear", price: "₱69" , quan: "36"},
+  { id: 8, name: "Mentos", price: "₱59" , quan: "123"},
+  { id: 9, name: "Pancit Canton", price: "₱99", quan: "127" },
+  { id: 10, name: "Lucky Me Noodles", price: "₱89", quan: "57" },
 
 ];
 
@@ -21,7 +21,8 @@ form.addEventListener("submit", function(event) {
   event.preventDefault();
   const name = document.getElementById("name").value;
   const price = document.getElementById("price").value;
-  addData(name, price);
+  const quan = document.getElementById("quan").value;
+  addData(name, price, quan);
   form.reset();
 });
 
@@ -32,14 +33,15 @@ searchInput.addEventListener("input", function() {
   const filteredData = data.filter(item =>
     item.name.toLowerCase().includes(searchTerm) ||
     item.price.toLowerCase().includes(searchTerm)
+
   );
   displayData(filteredData);
 });
 
 // Function to add data to the table
-function addData(name, price) {
+function addData(name, price, quan) {
   const id = data.length + 1;
-  const newData = { id, name, price };
+  const newData = { id, name, price,quan };
   data.push(newData);
   displayData(data);
 }
@@ -51,6 +53,7 @@ function displayData(data) {
     <tr>
       <th>Item Name</th>
       <th>Price</th>
+      <th>Quantity</th>
       <th></th>
     </tr>
   `;
@@ -59,6 +62,7 @@ function displayData(data) {
     row.innerHTML = `
       <td>${item.name}</td>
       <td>${item.price}</td>
+      <td>${item.quan}</td>
       <td>
         <button onclick="editData(${item.id})">Edit</button>
         <button onclick="deleteData(${item.id})">Delete</button>
