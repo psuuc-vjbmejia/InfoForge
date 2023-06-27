@@ -4,9 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMS</title>
-  <link rel="stylesheet" href="ims.css">
+  <link rel="stylesheet" href="test.css">
   <style>
+    nav {
+      width: 200px;
+      background: linear-gradient(to bottom, #203db8, #e7c620);
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
+    nav ul {
+      text-align: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 100px;
+    }
+
+    nav li {
+      padding: 10px;
+    }
+    nav li a {
+      color: #000;
+    }
+
+    nav li a:hover, a.ex2:active{
+      font-size: 150%;
+      text-decoration: none;
+      background-color: orange;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .logout-btn {
+      background-color: #e7c620 ;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .logout-btn:hover {
+      background-color: #555;
+      color: #fff;
+    }
+
+    .container {
+
+      width: 60%;
+      margin: 0 auto;
+      margin-left: 250px;
+      margin-top: 100px;
+    }
   </style>
 </head>
 <body>
@@ -36,6 +91,6 @@
       </tr>
     </table>
   </div>
-  <script src="ims.js"></script>
+  <script src="test2.js"></script>
 </body>
 </html>
